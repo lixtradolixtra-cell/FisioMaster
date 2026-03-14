@@ -1,0 +1,927 @@
+[
+  {
+    "id": "m-frontal",
+    "name": "Frontal",
+    "group": "Cabeça e face",
+    "origin": "Gálea aponeurótica",
+    "insertion": "Pele da região do supercílio",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Eleva os supercílios e enruga a fronte",
+    "imageSeed": "frontal_muscle"
+  },
+  {
+    "id": "m-orbicular-dos-olhos",
+    "name": "Orbicular dos olhos",
+    "group": "Cabeça e face",
+    "origin": "Margem medial da órbita, osso lacrimal",
+    "insertion": "Pele ao redor da órbita",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Fecha as pálpebras",
+    "imageSeed": "orbicularis_oculi"
+  },
+  {
+    "id": "m-orbicular-da-boca",
+    "name": "Orbicular da boca",
+    "group": "Cabeça e face",
+    "origin": "Músculos adjacentes da boca",
+    "insertion": "Pele e mucosa dos lábios",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Fecha e protrai os lábios",
+    "imageSeed": "orbicularis_oris"
+  },
+  {
+    "id": "m-zigomatico-maior",
+    "name": "Zigomático maior",
+    "group": "Cabeça e face",
+    "origin": "Osso zigomático",
+    "insertion": "Ângulo da boca",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Eleva e traciona lateralmente o ângulo da boca (sorriso)",
+    "imageSeed": "zygomaticus_major"
+  },
+  {
+    "id": "m-zigomatico-menor",
+    "name": "Zigomático menor",
+    "group": "Cabeça e face",
+    "origin": "Osso zigomático",
+    "insertion": "Lábio superior",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Eleva o lábio superior",
+    "imageSeed": "zygomaticus_minor"
+  },
+  {
+    "id": "m-bucinador",
+    "name": "Bucinador",
+    "group": "Cabeça e face",
+    "origin": "Processos alveolares da maxila e mandíbula",
+    "insertion": "Ângulo da boca",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Comprime as bochechas contra os dentes",
+    "imageSeed": "buccinator"
+  },
+  {
+    "id": "m-masseter",
+    "name": "Masseter",
+    "group": "Cabeça e face",
+    "origin": "Borda externa do arco do zigomático",
+    "insertion": "Face externa do ângulo da mandíbula",
+    "innervation": "Nervo masseteriano (ramo do mandibular do nervo trigémio - 5º par craniano)",
+    "action": "Oclusão e protrusão da mandíbula (fecha a mandíbula)",
+    "imageUrl": "https://i.pinimg.com/1200x/1a/79/1c/1a791cede7eb1421d234dc0de7e5d8f7.jpg",
+    "imageSeed": "masseter_muscle"
+  },
+  {
+    "id": "m-temporal",
+    "name": "Temporal",
+    "group": "Cabeça e face",
+    "origin": "Fossa temporal",
+    "insertion": "Processo coronoide da mandíbula",
+    "innervation": "Nervo trigêmeo (V par craniano)",
+    "action": "Eleva e retrai a mandíbula",
+    "imageSeed": "temporalis"
+  },
+  {
+    "id": "m-pterigoideo-medial",
+    "name": "Pterigóideo medial",
+    "group": "Cabeça e face",
+    "origin": "Processo pterigoide do esfenoide",
+    "insertion": "Ângulo da mandíbula (face medial)",
+    "innervation": "Nervo trigêmeo (V par craniano)",
+    "action": "Eleva a mandíbula e auxilia no movimento lateral",
+    "imageSeed": "medial_pterygoid"
+  },
+  {
+    "id": "m-pterigoideo-lateral",
+    "name": "Pterigóideo lateral",
+    "group": "Cabeça e face",
+    "origin": "Processo pterigoide do esfenoide",
+    "insertion": "Côndilo da mandíbula e disco articular",
+    "innervation": "Nervo trigêmeo (V par craniano)",
+    "action": "Protrai a mandíbula e auxilia no movimento lateral",
+    "imageSeed": "lateral_pterygoid"
+  },
+  {
+    "id": "m-esternocleidomastoideo",
+    "name": "Esternocleidomastoideo",
+    "group": "Pescoço",
+    "origin": "Processo mastóide e linha nucal superior",
+    "insertion": "Face anterior do manúbrio do esterno, junto a borda superior e anterior do 1/3 medial da clavícula",
+    "innervation": "Nervo Acessório (11º par craniano) e 2º e 3º nervos cervicais",
+    "action": "Contracção Unilateral: Inclinação lateral e rotação com a face virada para o lado oposto. Contracção Bilateral: Flexão da cabeça",
+    "imageUrl": "https://www.kenhub.com/thumbor/GKvgEpKOw23dL_KuZl6OLTQXqrA=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/10195/Musculus_sternocleidomastoideus.png",
+    "imageSeed": "sternocleidomastoid"
+  },
+  {
+    "id": "m-escalenos",
+    "name": "Escalenos (anterior, médio, posterior)",
+    "group": "Pescoço",
+    "origin": "Processos transversos das vértebras cervicais",
+    "insertion": "Primeira e segunda costelas",
+    "innervation": "Nervos cervicais",
+    "action": "Elevam as costelas (inspiração) e flexionam lateralmente o pescoço",
+    "imageSeed": "scalene_muscles"
+  },
+  {
+    "id": "m-platisma",
+    "name": "Platisma",
+    "group": "Pescoço",
+    "origin": "Fáscia do peitoral maior e deltoide",
+    "insertion": "Base da mandíbula e pele da face inferior",
+    "innervation": "Nervo facial (VII par craniano)",
+    "action": "Tensiona a pele do pescoço e deprime a mandíbula",
+    "imageSeed": "platysma"
+  },
+  {
+    "id": "m-digastrico",
+    "name": "Digástrico",
+    "group": "Pescoço",
+    "origin": "Incisura mastóidea (ventre posterior) e fossa digástrica da mandíbula (ventre anterior)",
+    "insertion": "Osso hioide",
+    "innervation": "Nervo facial (ventre posterior) e trigêmeo (ventre anterior)",
+    "action": "Eleva o osso hioide e deprime a mandíbula",
+    "imageSeed": "digastric"
+  },
+  {
+    "id": "m-milohioideo",
+    "name": "Milohióideo",
+    "group": "Pescoço",
+    "origin": "Linha milo-hióidea da mandíbula",
+    "insertion": "Osso hioide e rafe mediana",
+    "innervation": "Nervo trigêmeo (V par craniano)",
+    "action": "Eleva o osso hioide e o assoalho da boca",
+    "imageSeed": "mylohyoid"
+  },
+  {
+    "id": "m-geniohioideo",
+    "name": "Geniohióideo",
+    "group": "Pescoço",
+    "origin": "Espinha mentual inferior da mandíbula",
+    "insertion": "Corpo do osso hioide",
+    "innervation": "Primeiro nervo cervical (C1) via nervo hipoglosso",
+    "action": "Tração anterior do osso hioide",
+    "imageSeed": "geniohyoid"
+  },
+  {
+    "id": "m-esterno-hioideo",
+    "name": "Esterno-hióideo",
+    "group": "Pescoço",
+    "origin": "Manúbrio do esterno e clavícula",
+    "insertion": "Corpo do osso hioide",
+    "innervation": "Alça cervical (C1-C3)",
+    "action": "Deprime o osso hioide",
+    "imageSeed": "sternohyoid"
+  },
+  {
+    "id": "m-tiro-hioideo",
+    "name": "Tiro-hióideo",
+    "group": "Pescoço",
+    "origin": "Cartilagem tireóidea",
+    "insertion": "Corno maior do osso hioide",
+    "innervation": "Primeiro nervo cervical (C1)",
+    "action": "Deprime o osso hioide ou eleva a laringe",
+    "imageSeed": "thyrohyoid"
+  },
+  {
+    "id": "m-peitoral-maior",
+    "name": "Peitoral maior",
+    "group": "Tórax e abdome",
+    "origin": "2/3 mediais da borda anterior da clavícula, face anterior do esterno, face externa da 1ª a 6ª cartilagens costais, 6ª a 7ª costelas e aponeurose abdominal",
+    "insertion": "Tubérculo maior do úmero",
+    "innervation": "Nervo peitoral lateral e medial (C5, C6, C7, C8 e T1)",
+    "action": "Adução, rotação medial do braço, auxilia na abdução e flexão do braço até 90°.",
+    "imageUrl": "https://www.kenhub.com/thumbor/nbF-1pRP9YKf6nnt-ZaFySrmfSQ=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/10020/Musculus_pectoralis_major_02.png",
+    "imageSeed": "pectoralis_major"
+  },
+  {
+    "id": "m-peitoral-menor",
+    "name": "Peitoral menor",
+    "group": "Tórax e abdome",
+    "origin": "3ª a 5ª costelas",
+    "insertion": "Processo coracoide da escápula",
+    "innervation": "Nervo peitoral medial",
+    "action": "Abaixa e protrai a escápula",
+    "imageSeed": "pectoralis_minor"
+  },
+  {
+    "id": "m-serratil-anterior",
+    "name": "Serrátil anterior",
+    "group": "Tórax e abdome",
+    "origin": "Face lateral das 8 ou 9 primeiras costelas",
+    "insertion": "Borda medial da escápula",
+    "innervation": "Nervo torácico longo",
+    "action": "Protrai e rotaciona a escápula superiormente",
+    "imageSeed": "serratus_anterior"
+  },
+  {
+    "id": "m-intercostais-externos",
+    "name": "Intercostais externos",
+    "group": "Tórax e abdome",
+    "origin": "Borda inferior da costela superior",
+    "insertion": "Borda superior da costela inferior",
+    "innervation": "Nervos intercostais",
+    "action": "Elevam as costelas durante a inspiração",
+    "imageSeed": "external_intercostals"
+  },
+  {
+    "id": "m-intercostais-internos",
+    "name": "Intercostais internos",
+    "group": "Tórax e abdome",
+    "origin": "Borda superior da costela inferior",
+    "insertion": "Borda inferior da costela superior",
+    "innervation": "Nervos intercostais",
+    "action": "Deprimem as costelas durante a expiração forçada",
+    "imageSeed": "internal_intercostals"
+  },
+  {
+    "id": "m-diafragma",
+    "name": "Diafragma",
+    "group": "Tórax e abdome",
+    "origin": "Processo xifoide, cartilagens costais inferiores e vértebras lombares",
+    "insertion": "Centro tendíneo",
+    "innervation": "Nervo frênico (C3-C5)",
+    "action": "Principal músculo da inspiração (abaixa o centro tendíneo)",
+    "imageSeed": "diaphragm"
+  },
+  {
+    "id": "m-reto-abdominal",
+    "name": "Reto abdominal",
+    "group": "Tórax e abdome",
+    "origin": "Face externa e bordo inferior da 5ª à 7ª cartilagem costais e processo xifóide",
+    "insertion": "Corpo do púbis e sínfise púbica",
+    "innervation": "Ramos vantrais dos 6 últimos espinhais torácicos",
+    "action": "Fixo no tórax: Realiza retroversão (extensão) da pelve. Fixo na pelve: Flecte o tronco. Aumento da pressão intra-abdominal.",
+    "imageUrl": "https://www.kenhub.com/thumbor/uim0M74cF5MrvpA0LuaKpWqg2xo=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/10240/Musculus_rectus_abdominis_01.png",
+    "imageSeed": "rectus_abdominis"
+  },
+  {
+    "id": "m-obliquo-externo",
+    "name": "Oblíquo externo",
+    "group": "Tórax e abdome",
+    "origin": "Face externa das 8 últimas costelas",
+    "insertion": "Crista ilíaca, linha alba e tubérculo púbico",
+    "innervation": "Nervos intercostais inferiores",
+    "action": "Flexão e rotação contralateral do tronco",
+    "imageSeed": "external_oblique"
+  },
+  {
+    "id": "m-obliquo-interno",
+    "name": "Oblíquo interno",
+    "group": "Tórax e abdome",
+    "origin": "Fáscia toracolombar, crista ilíaca e ligamento inguinal",
+    "insertion": "Linha alba, pecten do púbis e últimas costelas",
+    "innervation": "Nervos intercostais inferiores, ilio-hipogástrico e ilioinguinal",
+    "action": "Flexão e rotação ipsilateral do tronco",
+    "imageSeed": "internal_oblique"
+  },
+  {
+    "id": "m-transverso-do-abdome",
+    "name": "Transverso do abdome",
+    "group": "Tórax e abdome",
+    "origin": "Cartilagens costais inferiores, fáscia toracolombar, crista ilíaca e ligamento inguinal",
+    "insertion": "Linha alba e crista púbica",
+    "innervation": "Nervos intercostais inferiores, ilio-hipogástrico e ilioinguinal",
+    "action": "Comprime o abdome (aumenta a pressão intra-abdominal)",
+    "imageSeed": "transversus_abdominis"
+  },
+  {
+    "id": "m-trapezio",
+    "name": "Trapézio",
+    "group": "Costas",
+    "origin": "Linha nucal superior, ligamento nucal, protuberância occipital externa até os processos espinhosos da C6 e processos espinhosos da C7 a T12",
+    "insertion": "1/3 lateral da borda posterior da clavícula, acrómio e espinha da escápula",
+    "innervation": "Nervo acessório (11º par craniano) e Plexo Cervical (C3 e C4)",
+    "action": "Fixo na Coluna: Eleva o ombro e aduz as escápulas. Fixo na Escápula: Inclina a cabeça, rotação, extensão da cabeça.",
+    "imageUrl": "https://th.bing.com/th/id/R.1ba9571e948f8a133e0bc882d8b2b60c?rik=PiJv40jSVRG90g&riu=http%3a%2f%2fhealus.jp%2fwp-content%2fuploads%2f2017%2f05%2ftrapezius.png&ehk=3vcnG48mr2WLImBLr6p4JGiinRnXg4MgzyvaX9mj%2bDU%3d&risl=&pid=ImgRaw&r=0",
+    "imageSeed": "trapezius_muscle"
+  },
+  {
+    "id": "m-latissimo-do-dorso",
+    "name": "Latíssimo do dorso (grande dorsal)",
+    "group": "Costas",
+    "origin": "Processos espinhosos das 7 últimas vértebras dorsais e todas as lombares, crista do sacro, crista ilíaca e face externa das 4 últimas costelas",
+    "insertion": "Sulco intertubercular do úmero",
+    "innervation": "Nervo Toracodorsal (C6, C7 e C8)",
+    "action": "Adução, extensão e rotação medial do braço, baixa o ombro e auxilia na inspiração forçada",
+    "imageUrl": "https://www.kenhub.com/thumbor/0D0BWznU7YoSxClaXA5eHDVdiB0=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/13441/IrtirBf6PsVLImfncXQHWQ_Musculus_latissimus_dorsi_1.png",
+    "imageSeed": "latissimus_dorsi"
+  },
+  {
+    "id": "m-romboide-maior",
+    "name": "Romboide maior",
+    "group": "Costas",
+    "origin": "Processos espinhosos de T2 a T5",
+    "insertion": "Borda medial da escápula (abaixo da espinha)",
+    "innervation": "Nervo dorsal da escápula",
+    "action": "Retração e elevação da escápula",
+    "imageSeed": "rhomboid_major"
+  },
+  {
+    "id": "m-romboide-menor",
+    "name": "Romboide menor",
+    "group": "Costas",
+    "origin": "Ligamento nucal e processos espinhosos de C7 a T1",
+    "insertion": "Borda medial da escápula (nível da espinha)",
+    "innervation": "Nervo dorsal da escápula",
+    "action": "Retração e elevação da escápula",
+    "imageSeed": "rhomboid_minor"
+  },
+  {
+    "id": "m-levantador-da-escapula",
+    "name": "Levantador da escápula",
+    "group": "Costas",
+    "origin": "Processos transversos de C1 a C4",
+    "insertion": "Ângulo superior da escápula",
+    "innervation": "Nervo dorsal da escápula e nervos cervicais",
+    "action": "Eleva a escápula e inclina o pescoço",
+    "imageSeed": "levator_scapulae"
+  },
+  {
+    "id": "m-eretor-da-espinha",
+    "name": "Eretor da espinha",
+    "group": "Costas",
+    "origin": "Sacro, crista ilíaca e processos espinhosos lombares",
+    "insertion": "Costelas, processos transversos e espinhosos das vértebras, e osso occipital",
+    "innervation": "Ramos dorsais dos nervos espinhais",
+    "action": "Extensão e inclinação lateral da coluna vertebral",
+    "imageSeed": "erector_spinae"
+  },
+  {
+    "id": "m-iliocostal",
+    "name": "Iliocostal",
+    "group": "Costas",
+    "origin": "Crista ilíaca e sacro",
+    "insertion": "Ângulos das costelas e processos transversos cervicais",
+    "innervation": "Ramos dorsais dos nervos espinhais",
+    "action": "Extensão e inclinação lateral da coluna",
+    "imageSeed": "iliocostalis"
+  },
+  {
+    "id": "m-longuissimo",
+    "name": "Longuíssimo",
+    "group": "Costas",
+    "origin": "Processos transversos das vértebras",
+    "insertion": "Processos transversos superiores, costelas e processo mastoide",
+    "innervation": "Ramos dorsais dos nervos espinhais",
+    "action": "Extensão e inclinação lateral da coluna e cabeça",
+    "imageSeed": "longissimus"
+  },
+  {
+    "id": "m-espinhal",
+    "name": "Espinhal",
+    "group": "Costas",
+    "origin": "Processos espinhosos das vértebras",
+    "insertion": "Processos espinhosos superiores",
+    "innervation": "Ramos dorsais dos nervos espinhais",
+    "action": "Extensão da coluna vertebral",
+    "imageSeed": "spinalis"
+  },
+  {
+    "id": "m-deltoide",
+    "name": "Deltoide",
+    "group": "Ombro",
+    "origin": "2/3 laterais da borda anterior da clavícula, acrômio e espinha da escápula",
+    "insertion": "Tuberosidade deltoidea (1/2 da diáfise do úmero)",
+    "innervation": "Nervo axilar (C5 e C6)",
+    "action": "Abdução do braço, auxilia nos movimentos de flexão, extensão, rotação lateral e medial.",
+    "imageUrl": "https://www.kenhub.com/thumbor/SLuZES9-xRP804IoCKMln7pJjb4=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/article/en/the-deltoid-muscle/AmPDmVUkH2ku4rkB0HgZ5w_M._deltoideus_1.png",
+    "imageSeed": "deltoid_muscle"
+  },
+  {
+    "id": "m-supraespinhal",
+    "name": "Supraespinhal",
+    "group": "Ombro",
+    "origin": "Fossa supra-espinhosa",
+    "insertion": "Faceta superior do tubérculo maior do úmero",
+    "innervation": "Nervo supraescapular (C5 e C6)",
+    "action": "Auxilia o deltóide na abdução do braço, auxilia na rotação lateral e fixa a articulação do ombro",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Supraspinatus_muscle_back.png",
+    "imageSeed": "supraspinatus"
+  },
+  {
+    "id": "m-infraespinhal",
+    "name": "Infraespinhal",
+    "group": "Ombro",
+    "origin": "Fossa infraespinhal da escápula",
+    "insertion": "Tubérculo maior do úmero (faceta média)",
+    "innervation": "Nervo supraescapular",
+    "action": "Rotação lateral do braço e estabilização do ombro",
+    "imageSeed": "infraspinatus"
+  },
+  {
+    "id": "m-subescapular",
+    "name": "Subescapular",
+    "group": "Ombro",
+    "origin": "Fossa subescapular",
+    "insertion": "Tubérculo menor do úmero",
+    "innervation": "Nervos subescapulares superior e inferior",
+    "action": "Rotação medial do braço e estabilização do ombro",
+    "imageSeed": "subscapularis"
+  },
+  {
+    "id": "m-redondo-maior",
+    "name": "Redondo maior",
+    "group": "Ombro",
+    "origin": "Ângulo inferior e borda lateral da escápula",
+    "insertion": "Crista do tubérculo menor do úmero",
+    "innervation": "Nervo subescapular inferior",
+    "action": "Adução, extensão e rotação medial do braço",
+    "imageSeed": "teres_major"
+  },
+  {
+    "id": "m-redondo-menor",
+    "name": "Redondo menor",
+    "group": "Ombro",
+    "origin": "Borda lateral da escápula",
+    "insertion": "Tubérculo maior do úmero (faceta inferior)",
+    "innervation": "Nervo axilar",
+    "action": "Rotação lateral do braço e estabilização do ombro",
+    "imageSeed": "teres_minor"
+  },
+  {
+    "id": "m-biceps-braquial",
+    "name": "Bíceps braquial",
+    "group": "Braço",
+    "origin": "Porção Longa: Tubérculo supra-glenoidal. Porção Curta: Processo coracóide",
+    "insertion": "Tuberosidade radial",
+    "innervation": "Nervo musculocutâneo (C5 e C6)",
+    "action": "Flexão do cotovelo, supinação do antebraço, depressão do ombro.",
+    "imageUrl": "https://www.kenhub.com/thumbor/X0a_bQFjSvpeImX_3_dAfRo1QAk=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/13430/9HjX34LITOECvy2jQOVwg_Q9DBWstioL_M._biceps_brachii_2.png",
+    "imageSeed": "biceps_brachii"
+  },
+  {
+    "id": "m-braquial",
+    "name": "Braquial",
+    "group": "Braço",
+    "origin": "Metade distal da face anterior do úmero",
+    "insertion": "Tuberosidade da ulna e processo coronoide",
+    "innervation": "Nervo musculocutâneo e nervo radial",
+    "action": "Flexão do cotovelo",
+    "imageSeed": "brachialis"
+  },
+  {
+    "id": "m-coracobraquial",
+    "name": "Coracobraquial",
+    "group": "Braço",
+    "origin": "Processo coracoide da escápula",
+    "insertion": "Terço médio da face medial do úmero",
+    "innervation": "Nervo musculocutâneo",
+    "action": "Flexão e adução do braço",
+    "imageSeed": "coracobrachialis"
+  },
+  {
+    "id": "m-triceps-braquial",
+    "name": "Tríceps braquial",
+    "group": "Braço",
+    "origin": "Porção Longa: Tubérculo infra-glenoidal. Porção Lateral/Medial: Face posterior do úmero",
+    "insertion": "Olécrano (ulna)",
+    "innervation": "Nervo radial (C7 e C8)",
+    "action": "Extensão do cotovelo e a porção longa faz adução do braço",
+    "imageUrl": "https://www.kenhub.com/thumbor/SwOV82VAbbZnY-3-JX5H8TwpFFM=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/article/pt/musculo-tricipite-braquial/hmoGQAon4p47zgSammvQ_M._triceps_brachii.png",
+    "imageSeed": "triceps_brachii"
+  },
+  {
+    "id": "m-braquiorradial",
+    "name": "Braquiorradial",
+    "group": "Antebraço (principais)",
+    "origin": "Crista supracondilar lateral do úmero",
+    "insertion": "Processo estiloide do rádio",
+    "innervation": "Nervo radial",
+    "action": "Flexão do cotovelo",
+    "imageSeed": "brachioradialis"
+  },
+  {
+    "id": "m-pronador-redondo",
+    "name": "Pronador redondo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo medial do úmero e processo coronoide da ulna",
+    "insertion": "Face lateral do rádio",
+    "innervation": "Nervo mediano",
+    "action": "Pronação e flexão do antebraço",
+    "imageSeed": "pronator_teres"
+  },
+  {
+    "id": "m-pronador-quadrado",
+    "name": "Pronador quadrado",
+    "group": "Antebraço (principais)",
+    "origin": "Quarto distal da face anterior da ulna",
+    "insertion": "Quarto distal da face anterior do rádio",
+    "innervation": "Nervo interósseo anterior (ramo do mediano)",
+    "action": "Pronação do antebraço",
+    "imageSeed": "pronator_quadratus"
+  },
+  {
+    "id": "m-supinador",
+    "name": "Supinador",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo lateral do úmero e crista do músculo supinador da ulna",
+    "insertion": "Terço proximal da face lateral do rádio",
+    "innervation": "Nervo radial (ramo profundo)",
+    "action": "Supinação do antebraço",
+    "imageSeed": "supinator"
+  },
+  {
+    "id": "m-flexor-radial-do-carpo",
+    "name": "Flexor radial do carpo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo medial do úmero",
+    "insertion": "Base do 2º metatarsal",
+    "innervation": "Nervo mediano",
+    "action": "Flexão e abdução da mão (desvio radial)",
+    "imageSeed": "flexor_carpi_radialis"
+  },
+  {
+    "id": "m-flexor-ulnar-do-carpo",
+    "name": "Flexor ulnar do carpo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo medial do úmero e olécrano da ulna",
+    "insertion": "Osso pisiforme, hamato e 5º metatarsal",
+    "innervation": "Nervo ulnar",
+    "action": "Flexão e adução da mão (desvio ulnar)",
+    "imageSeed": "flexor_carpi_ulnaris"
+  },
+  {
+    "id": "m-palmar-longo",
+    "name": "Palmar longo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo medial do úmero",
+    "insertion": "Aponeurose palmar",
+    "innervation": "Nervo mediano",
+    "action": "Flexão da mão e tensão da aponeurose palmar",
+    "imageSeed": "palmaris_longus"
+  },
+  {
+    "id": "m-extensor-radial-longo-do-carpo",
+    "name": "Extensor radial longo do carpo",
+    "group": "Antebraço (principais)",
+    "origin": "Crista supracondilar lateral do úmero",
+    "insertion": "Base do 2º metatarsal",
+    "innervation": "Nervo radial",
+    "action": "Extensão e abdução da mão (desvio radial)",
+    "imageSeed": "extensor_carpi_radialis_longus"
+  },
+  {
+    "id": "m-extensor-radial-curto-do-carpo",
+    "name": "Extensor radial curto do carpo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo lateral do úmero",
+    "insertion": "Base do 3º metatarsal",
+    "innervation": "Nervo radial",
+    "action": "Extensão e abdução da mão",
+    "imageSeed": "extensor_carpi_radialis_brevis"
+  },
+  {
+    "id": "m-extensor-dos-dedos",
+    "name": "Extensor dos dedos",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo lateral do úmero",
+    "insertion": "Expansões extensoras dos dedos 2 a 5",
+    "innervation": "Nervo radial (ramo profundo)",
+    "action": "Extensão dos dedos e da mão",
+    "imageSeed": "extensor_digitorum"
+  },
+  {
+    "id": "m-extensor-ulnar-do-carpo",
+    "name": "Extensor ulnar do carpo",
+    "group": "Antebraço (principais)",
+    "origin": "Epicôndilo lateral do úmero e borda posterior da ulna",
+    "insertion": "Base do 5º metatarsal",
+    "innervation": "Nervo radial (ramo profundo)",
+    "action": "Extensão e adução da mão (desvio ulnar)",
+    "imageSeed": "extensor_carpi_ulnaris"
+  },
+  {
+    "id": "m-gluteo-maximo",
+    "name": "Glúteo máximo",
+    "group": "Quadril",
+    "origin": "1/5 posterior da crista ilíaca, asa ilíaca, crista sacral mediana, cóccix",
+    "insertion": "Tuberosidade glútea e tracto iliotibial",
+    "innervation": "Nervo Glúteo Inferior (L5, S1 e S2)",
+    "action": "Extensão do quadril, rotação lateral da coxa e auxilia na adução da coxa.",
+    "imageUrl": "https://www.kenhub.com/thumbor/5oFrjKSiKxMviMTGOkNT245Rv8U=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/14621/Z24wQPQQX1KWzTugeOw_gluteus_maximus.png",
+    "imageSeed": "gluteus_maximus"
+  },
+  {
+    "id": "m-gluteo-medio",
+    "name": "Glúteo médio",
+    "group": "Quadril",
+    "origin": "Face externa do ílio, entre as linhas glúteas anterior e posterior",
+    "insertion": "Face lateral do trocânter maior do fêmur",
+    "innervation": "Nervo glúteo superior",
+    "action": "Abdução e rotação medial da coxa; estabiliza a pelve",
+    "imageSeed": "gluteus_medius"
+  },
+  {
+    "id": "m-gluteo-minimo",
+    "name": "Glúteo mínimo",
+    "group": "Quadril",
+    "origin": "Face externa do ílio, entre as linhas glúteas anterior e inferior",
+    "insertion": "Face anterior do trocânter maior do fêmur",
+    "innervation": "Nervo glúteo superior",
+    "action": "Abdução e rotação medial da coxa; estabiliza a pelve",
+    "imageSeed": "gluteus_minimus"
+  },
+  {
+    "id": "m-tensor-da-fascia-lata",
+    "name": "Tensor da fáscia lata",
+    "group": "Quadril",
+    "origin": "Espinha ilíaca anterossuperior e crista ilíaca",
+    "insertion": "Trato iliotibial (que se insere no côndilo lateral da tíbia)",
+    "innervation": "Nervo glúteo superior",
+    "action": "Abdução, flexão e rotação medial da coxa; estabiliza o joelho",
+    "imageSeed": "tensor_fasciae_latae"
+  },
+  {
+    "id": "m-iliopsoas",
+    "name": "Iliopsoas",
+    "group": "Quadril",
+    "origin": "Fossa ilíaca (ilíaco) e processos transversos de T12-L5 (psoas maior)",
+    "insertion": "Trocânter menor do fêmur",
+    "innervation": "Nervo femoral e ramos do plexo lombar",
+    "action": "Principal flexor do quadril",
+    "imageSeed": "iliopsoas"
+  },
+  {
+    "id": "m-piriforme",
+    "name": "Piriforme",
+    "group": "Quadril",
+    "origin": "Face anterior do sacro",
+    "insertion": "Margem superior do trocânter maior do fêmur",
+    "innervation": "Ramos do plexo sacral (S1-S2)",
+    "action": "Rotação lateral e abdução da coxa",
+    "imageSeed": "piriformis"
+  },
+  {
+    "id": "m-reto-femoral",
+    "name": "Reto femoral",
+    "group": "Coxa anterior",
+    "origin": "Espinha ilíaca anteroinferior e margem superior do acetábulo",
+    "insertion": "Patela e tuberosidade da tíbia (via ligamento patelar)",
+    "innervation": "Nervo femoral",
+    "action": "Extensão do joelho e flexão do quadril",
+    "imageUrl": "https://www.kenhub.com/thumbor/jjz4acyt65Y2uhxjgxugbe3Nd_U=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/14536/Op0rOgXqQB5W7THiS8Q_NmqapCoy4Z_M._quadriceps_femoris_NN_2__1_.jpg",
+    "imageSeed": "rectus_femoris"
+  },
+  {
+    "id": "m-vasto-lateral",
+    "name": "Vasto lateral",
+    "group": "Coxa anterior",
+    "origin": "Trocânter maior e linha áspera do fêmur",
+    "insertion": "Patela e tuberosidade da tíbia",
+    "innervation": "Nervo femoral",
+    "action": "Extensão do joelho",
+    "imageSeed": "vastus_lateralis"
+  },
+  {
+    "id": "m-vasto-medial",
+    "name": "Vasto medial",
+    "group": "Coxa anterior",
+    "origin": "Linha intertrocantérica e linha áspera do fêmur",
+    "insertion": "Patela e tuberosidade da tíbia",
+    "innervation": "Nervo femoral",
+    "action": "Extensão do joelho",
+    "imageSeed": "vastus_medialis"
+  },
+  {
+    "id": "m-vasto-intermedio",
+    "name": "Vasto intermédio",
+    "group": "Coxa anterior",
+    "origin": "Face anterior e lateral do corpo do fêmur",
+    "insertion": "Patela e tuberosidade da tíbia",
+    "innervation": "Nervo femoral",
+    "action": "Extensão do joelho",
+    "imageSeed": "vastus_intermedius"
+  },
+  {
+    "id": "m-sartorio",
+    "name": "Sartório",
+    "group": "Coxa anterior",
+    "origin": "Espinha ilíaca anterossuperior",
+    "insertion": "Face medial da parte superior da tíbia (pata de ganso)",
+    "innervation": "Nervo femoral",
+    "action": "Flexão, abdução e rotação lateral do quadril; flexão do joelho",
+    "imageSeed": "sartorius"
+  },
+  {
+    "id": "m-adutor-longo",
+    "name": "Adutor longo",
+    "group": "Coxa medial (adutores)",
+    "origin": "Corpo do púbis",
+    "insertion": "Linha áspera do fêmur (terço médio)",
+    "innervation": "Nervo obturatório",
+    "action": "Adução e flexão da coxa",
+    "imageSeed": "adductor_longus"
+  },
+  {
+    "id": "m-adutor-curto",
+    "name": "Adutor curto",
+    "group": "Coxa medial (adutores)",
+    "origin": "Corpo e ramo inferior do púbis",
+    "insertion": "Linha pectínea e linha áspera do fêmur",
+    "innervation": "Nervo obturatório",
+    "action": "Adução e flexão da coxa",
+    "imageSeed": "adductor_brevis"
+  },
+  {
+    "id": "m-adutor-magno",
+    "name": "Adutor magno",
+    "group": "Coxa medial (adutores)",
+    "origin": "Ramo inferior do púbis, ramo do ísquio e tuberosidade isquiática",
+    "insertion": "Tuberosidade glútea, linha áspera e tubérculo adutor do fêmur",
+    "innervation": "Nervo obturatório e nervo isquiático",
+    "action": "Adução, flexão (parte anterior) e extensão (parte posterior) da coxa",
+    "imageSeed": "adductor_magnus"
+  },
+  {
+    "id": "m-gracil",
+    "name": "Grácil",
+    "group": "Coxa medial (adutores)",
+    "origin": "Corpo e ramo inferior do púbis",
+    "insertion": "Face medial da parte superior da tíbia (pata de ganso)",
+    "innervation": "Nervo obturatório",
+    "action": "Adução da coxa, flexão e rotação medial do joelho",
+    "imageSeed": "gracilis"
+  },
+  {
+    "id": "m-pectineo",
+    "name": "Pectíneo",
+    "group": "Coxa medial (adutores)",
+    "origin": "Pecten do púbis",
+    "insertion": "Linha pectínea do fêmur",
+    "innervation": "Nervo femoral (e às vezes obturatório)",
+    "action": "Adução e flexão da coxa",
+    "imageSeed": "pectineus"
+  },
+  {
+    "id": "m-biceps-femoral",
+    "name": "Bíceps femoral",
+    "group": "Coxa posterior",
+    "origin": "Tuberosidade isquiática e Região lateral da linha áspera do fémur",
+    "insertion": "Cabeça da fíbula (região lateral) e côndilo lateral da tíbia",
+    "innervation": "Nervo Ciático (Tibial e Fibular)",
+    "action": "Extensão do quadril, flexão do joelho e rotação lateral da coxa",
+    "imageUrl": "https://www.kenhub.com/thumbor/PE6APBXVobF2zvBIGjkyeiNb6C8=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/12929/Biceps_femoris_muscle.png",
+    "imageSeed": "biceps_femoris"
+  },
+  {
+    "id": "m-semitendinoso",
+    "name": "Semitendinoso",
+    "group": "Coxa posterior",
+    "origin": "Tuberosidade isquiática",
+    "insertion": "Face medial da parte superior da tíbia (pata de ganso)",
+    "innervation": "Nervo isquiático (divisão tibial)",
+    "action": "Extensão do quadril, flexão e rotação medial do joelho",
+    "imageSeed": "semitendinosus"
+  },
+  {
+    "id": "m-semimembranoso",
+    "name": "Semimembranoso",
+    "group": "Coxa posterior",
+    "origin": "Tuberosidade isquiática",
+    "insertion": "Côndilo medial da tíbia",
+    "innervation": "Nervo isquiático (divisão tibial)",
+    "action": "Extensão do quadril, flexão e rotação medial do joelho",
+    "imageSeed": "semimembranosus"
+  },
+  {
+    "id": "m-gastrocnemio",
+    "name": "Gastrocnêmio",
+    "group": "Perna",
+    "origin": "Côndilo medial e lateral do fémur",
+    "insertion": "Túber do calcâneo (tendão calcâneo)",
+    "innervation": "Nervo Ciático - Tibial (S1 e S2)",
+    "action": "Flexão do joelho e flexão plantar do pé",
+    "imageUrl": "https://www.kenhub.com/thumbor/b49tGM3ohNxTsJR4xThbWHQbDAs=/fit-in/413x413/filters:fill(FFFFFF,true):watermark(/images/watermark_only_413.png,0,0,0):watermark(/logos/logo_url_sm.png,-10,-10,0):format(jpeg)/images/learnable/gastrocnemius-muscle/UBNnWrJfEfzi1t893NoOyg_Pzr4hPK6pL_M._gastrocnemius_NN_2.png",
+    "imageSeed": "gastrocnemius"
+  },
+  {
+    "id": "m-soleo",
+    "name": "Sóleo",
+    "group": "Perna",
+    "origin": "Face posterior da cabeça da fíbula e linha do sóleo na tíbia",
+    "insertion": "Túber do calcâneo (tendão calcâneo)",
+    "innervation": "Nervo tibial",
+    "action": "Flexão plantar do pé",
+    "imageSeed": "soleus"
+  },
+  {
+    "id": "m-tibial-anterior",
+    "name": "Tibial anterior",
+    "group": "Perna",
+    "origin": "Tuberosidade anterior e lateral da tíbia e face lateral da tíbia",
+    "insertion": "Superfície plantar do cuneiforme medial e base do 1º metatarsiano",
+    "innervation": "Nervo Fibular Profundo (L4, L5 e S1)",
+    "action": "Flexão dorsal do pé, adução e rotação medial do pé (inversão)",
+    "imageUrl": "https://www.kenhub.com/thumbor/GG_kvQO0j4k9DOS9nuhDJVzvR5k=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/12972/ssEatJ6boVqj60odURIiQ_S6zoMopRSV_M._tibialis_anterior_NN_2.png",
+    "imageSeed": "tibialis_anterior"
+  },
+  {
+    "id": "m-fibular-longo",
+    "name": "Fibular longo",
+    "group": "Perna",
+    "origin": "Cabeça e face lateral da fíbula",
+    "insertion": "Base do 1º metatarsal e cuneiforme medial",
+    "innervation": "Nervo fibular superficial",
+    "action": "Eversão e flexão plantar do pé",
+    "imageSeed": "fibularis_longus"
+  },
+  {
+    "id": "m-fibular-curto",
+    "name": "Fibular curto",
+    "group": "Perna",
+    "origin": "Metade distal da face lateral da fíbula",
+    "insertion": "Base do 5º metatarsal",
+    "innervation": "Nervo fibular superficial",
+    "action": "Eversão e flexão plantar do pé",
+    "imageSeed": "fibularis_brevis"
+  },
+  {
+    "id": "m-extensor-longo-dos-dedos",
+    "name": "Extensor longo dos dedos",
+    "group": "Perna",
+    "origin": "Côndilo lateral da tíbia e face anterior da fíbula",
+    "insertion": "Falanges média e distal dos dedos 2 a 5",
+    "innervation": "Nervo fibular profundo",
+    "action": "Extensão dos dedos e dorsiflexão do pé",
+    "imageSeed": "extensor_digitorum_longus"
+  },
+  {
+    "id": "m-flexor-longo-dos-dedos",
+    "name": "Flexor longo dos dedos",
+    "group": "Perna",
+    "origin": "Face posterior da tíbia",
+    "insertion": "Bases das falanges distais dos dedos 2 a 5",
+    "innervation": "Nervo tibial",
+    "action": "Flexão dos dedos e flexão plantar do pé",
+    "imageSeed": "flexor_digitorum_longus"
+  },
+  {
+    "id": "m-pubococcigeo",
+    "name": "Pubococcígeo",
+    "group": "Assoalho pélvico",
+    "origin": "Face posterior do púbis",
+    "insertion": "Cóccix e rafe anococcígea",
+    "innervation": "Ramos do plexo sacral (S3-S4)",
+    "action": "Suporta as vísceras pélvicas e atua como esfíncter",
+    "imageSeed": "pubococcygeus"
+  },
+  {
+    "id": "m-puborretal",
+    "name": "Puborretal",
+    "group": "Assoalho pélvico",
+    "origin": "Face posterior do púbis",
+    "insertion": "Forma uma alça ao redor da junção anorretal",
+    "innervation": "Ramos do plexo sacral (S3-S4)",
+    "action": "Mantém a continência fecal",
+    "imageSeed": "puborectalis"
+  },
+  {
+    "id": "m-iliococcigeo",
+    "name": "Iliococcígeo",
+    "group": "Assoalho pélvico",
+    "origin": "Arco tendíneo do músculo levantador do ânus e espinha isquiática",
+    "insertion": "Cóccix e rafe anococcígea",
+    "innervation": "Ramos do plexo sacral (S3-S4)",
+    "action": "Suporta as vísceras pélvicas",
+    "imageSeed": "iliococcygeus"
+  },
+  {
+    "id": "m-coccigeo",
+    "name": "Coccígeo",
+    "group": "Assoalho pélvico",
+    "origin": "Espinha isquiática",
+    "insertion": "Margem lateral do cóccix e sacro",
+    "innervation": "Ramos do plexo sacral (S4-S5)",
+    "action": "Suporta as vísceras pélvicas e puxa o cóccix para frente",
+    "imageSeed": "coccygeus"
+  },
+  {
+    "id": "m-bulboesponjoso",
+    "name": "Bulboesponjoso",
+    "group": "Assoalho pélvico",
+    "origin": "Centro tendíneo do períneo",
+    "insertion": "Fáscia do bulbo do pênis/vestíbulo e clitóris",
+    "innervation": "Nervo pudendo",
+    "action": "Auxilia na ereção, ejaculação e constrição vaginal",
+    "imageSeed": "bulbospongiosus"
+  },
+  {
+    "id": "m-isquiocavernoso",
+    "name": "Isquiocavernoso",
+    "group": "Assoalho pélvico",
+    "origin": "Ramo isquiopúbico e tuberosidade isquiática",
+    "insertion": "Pilar do pênis ou clitóris",
+    "innervation": "Nervo pudendo",
+    "action": "Mantém a ereção do pênis ou clitóris",
+    "imageSeed": "ischiocavernosus"
+  },
+  {
+    "id": "m-transverso-superficial-do-perineo",
+    "name": "Transverso superficial do períneo",
+    "group": "Assoalho pélvico",
+    "origin": "Tuberosidade isquiática",
+    "insertion": "Centro tendíneo do períneo",
+    "innervation": "Nervo pudendo",
+    "action": "Estabiliza o centro tendíneo do períneo",
+    "imageSeed": "superficial_transverse_perineal"
+  }
+]

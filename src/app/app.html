@@ -1,0 +1,40 @@
+<div class="flex flex-col h-[100dvh] bg-slate-50 dark:bg-[#0B1121] text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300 selection:bg-emerald-200 dark:selection:bg-emerald-900">
+  <!-- Header -->
+  <header class="sticky top-0 bg-white/80 dark:bg-[#0B1121]/90 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/40 p-4 pt-[max(1rem,env(safe-area-inset-top))] z-30 flex items-center justify-between transition-colors duration-300">
+    <div class="flex items-center gap-3 text-emerald-600 dark:text-emerald-400">
+      <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-[#064E3B]/40 flex items-center justify-center border border-emerald-100 dark:border-emerald-500/20">
+        <mat-icon class="drop-shadow-sm">healing</mat-icon>
+      </div>
+      <h1 class="text-2xl font-display font-bold tracking-tight text-slate-800 dark:text-white">FisioMaster</h1>
+    </div>
+    <button (click)="toggleTheme()" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-[#151E2E] text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all active:scale-95 flex items-center justify-center border border-slate-200/50 dark:border-slate-700/50">
+      <mat-icon class="text-[20px]">{{ themeService.isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
+    </button>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 overflow-y-auto pb-24 flex flex-col relative">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 w-full bg-white/90 dark:bg-[#151E2E]/90 backdrop-blur-xl border-t border-slate-200/60 dark:border-slate-700/60 z-40 transition-colors duration-300 pb-[env(safe-area-inset-bottom)]">
+    <div class="flex justify-around items-center h-16 px-4 max-w-md mx-auto">
+      <a routerLink="/muscles" routerLinkActive="active text-emerald-600 dark:text-emerald-400" [routerLinkActiveOptions]="{exact: true}" class="relative flex flex-col items-center justify-center w-16 h-12 rounded-2xl text-slate-400 dark:text-slate-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all active:scale-95 group">
+        <div class="absolute inset-0 bg-emerald-50 dark:bg-emerald-500/10 rounded-2xl opacity-0 group-[.active]:opacity-100 transition-opacity"></div>
+        <mat-icon class="relative z-10 transition-transform group-[.active]:-translate-y-0.5">menu_book</mat-icon>
+        <span class="relative z-10 text-[10px] font-semibold mt-0.5 transition-transform group-[.active]:translate-y-0.5">Guia</span>
+      </a>
+      <a routerLink="/search" routerLinkActive="active text-emerald-600 dark:text-emerald-400" class="relative flex flex-col items-center justify-center w-16 h-12 rounded-2xl text-slate-400 dark:text-slate-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all active:scale-95 group">
+        <div class="absolute inset-0 bg-emerald-50 dark:bg-emerald-500/10 rounded-2xl opacity-0 group-[.active]:opacity-100 transition-opacity"></div>
+        <mat-icon class="relative z-10 transition-transform group-[.active]:-translate-y-0.5">search</mat-icon>
+        <span class="relative z-10 text-[10px] font-semibold mt-0.5 transition-transform group-[.active]:translate-y-0.5">Pesquisa</span>
+      </a>
+      <a routerLink="/chat" routerLinkActive="active text-emerald-600 dark:text-emerald-400" class="relative flex flex-col items-center justify-center w-16 h-12 rounded-2xl text-slate-400 dark:text-slate-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all active:scale-95 group">
+        <div class="absolute inset-0 bg-emerald-50 dark:bg-emerald-500/10 rounded-2xl opacity-0 group-[.active]:opacity-100 transition-opacity"></div>
+        <mat-icon class="relative z-10 transition-transform group-[.active]:-translate-y-0.5">smart_toy</mat-icon>
+        <span class="relative z-10 text-[10px] font-semibold mt-0.5 transition-transform group-[.active]:translate-y-0.5">Atlas</span>
+      </a>
+    </div>
+  </nav>
+</div>
