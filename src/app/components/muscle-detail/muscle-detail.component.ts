@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MuscleService, Muscle } from '../../services/muscle.service';
-import { GeminiService } from '../../services/gemini.service';
-import { marked } from 'marked';
 
 @Component({
   selector: 'app-muscle-detail',
@@ -38,15 +36,6 @@ import { marked } from 'marked';
                 </span>
                 <h2 class="text-3xl md:text-5xl font-display font-bold text-white drop-shadow-lg tracking-tight leading-tight">{{ m.name }}</h2>
               </div>
-              
-              <button 
-                (click)="playAudio()" 
-                class="flex items-center justify-center gap-2 text-white hover:bg-emerald-500 bg-emerald-600/90 backdrop-blur-md px-5 py-3 md:py-3 rounded-2xl md:rounded-full transition-all duration-300 active:scale-95 border border-emerald-400/30 shadow-lg w-full md:w-fit"
-                [disabled]="isAudioPlaying()"
-              >
-                <mat-icon class="text-[22px]">{{ isAudioPlaying() ? 'volume_up' : 'play_arrow' }}</mat-icon>
-                <span class="text-sm font-bold tracking-wide">{{ isAudioPlaying() ? 'Ouvindo...' : 'Ouvir Resumo' }}</span>
-              </button>
             </div>
             
             @if (!m.imageUrl) {
@@ -101,34 +90,14 @@ import { marked } from 'marked';
               </div>
               Patologias Associadas
             </h3>
-            @if (!pathologies()) {
-              <button 
-                (click)="generatePathologies()" 
-                class="flex items-center justify-center gap-3 bg-slate-900 dark:bg-emerald-600 text-white px-6 py-3.5 rounded-2xl md:rounded-full hover:bg-slate-800 dark:hover:bg-emerald-500 transition-all duration-300 active:scale-95 shadow-md hover:shadow-lg hover:-translate-y-0.5 w-full md:w-fit"
-                [disabled]="isLoadingPathologies()"
-              >
-                @if (!isLoadingPathologies()) {
-                  <mat-icon class="text-[22px]">auto_awesome</mat-icon>
-                } @else {
-                  <mat-icon class="animate-spin text-[22px]">refresh</mat-icon>
-                }
-                <span class="text-sm font-bold tracking-wide">{{ isLoadingPathologies() ? 'Gerando com Atlas...' : 'Gerar com IA' }}</span>
-              </button>
-            }
           </div>
 
-          @if (pathologies()) {
-            <div class="prose prose-slate dark:prose-invert prose-emerald max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-emerald-600 dark:prose-a:text-emerald-400 prose-p:leading-relaxed prose-li:marker:text-emerald-500 bg-slate-50/50 dark:bg-slate-900/30 p-6 md:p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800/50" [innerHTML]="pathologies()"></div>
-          }
-          
-          @if (!pathologies() && !isLoadingPathologies()) {
-            <div class="text-center py-12 px-6 bg-slate-50/80 dark:bg-slate-900/40 rounded-[2rem] border-2 border-dashed border-slate-200 dark:border-slate-700/60">
-              <div class="w-20 h-20 mx-auto bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm mb-5 border border-slate-100 dark:border-slate-700">
-                <mat-icon class="text-4xl text-slate-300 dark:text-slate-600">medical_services</mat-icon>
-              </div>
-              <p class="text-slate-500 dark:text-slate-400 font-medium max-w-md mx-auto leading-relaxed">Clique no botão acima para pedir ao Atlas para gerar as patologias mais comuns e tratamentos fisioterapêuticos para este músculo.</p>
+          <div class="text-center py-12 px-6 bg-slate-50/80 dark:bg-slate-900/40 rounded-[2rem] border-2 border-dashed border-slate-200 dark:border-slate-700/60">
+            <div class="w-20 h-20 mx-auto bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm mb-5 border border-slate-100 dark:border-slate-700">
+              <mat-icon class="text-4xl text-slate-300 dark:text-slate-600">medical_services</mat-icon>
             </div>
-          }
+            <p class="text-slate-500 dark:text-slate-400 font-medium max-w-md mx-auto leading-relaxed">As informações sobre patologias estarão disponíveis em breve.</p>
+          </div>
         </div>
       } @else {
         <div class="text-center py-20 px-4">
@@ -144,59 +113,16 @@ import { marked } from 'marked';
 })
 export class MuscleDetailComponent implements OnInit {
   muscle = signal<Muscle | undefined>(undefined);
-  pathologies = signal<string | null>(null);
-  isLoadingPathologies = signal(false);
-  isAudioPlaying = signal(false);
 
   private route = inject(ActivatedRoute);
   private muscleService = inject(MuscleService);
-  private geminiService = inject(GeminiService);
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       const id = params.get('id');
       if (id) {
         this.muscle.set(this.muscleService.getMuscleById(id));
-        this.pathologies.set(null);
       }
     });
-  }
-
-  async generatePathologies() {
-    const m = this.muscle();
-    if (!m) return;
-
-    this.isLoadingPathologies.set(true);
-    try {
-      const markdown = await this.geminiService.generatePathologies(m.name);
-      const html = await marked.parse(markdown);
-      this.pathologies.set(html);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      this.isLoadingPathologies.set(false);
-    }
-  }
-
-  async playAudio() {
-    const m = this.muscle();
-    if (!m || this.isAudioPlaying()) return;
-
-    this.isAudioPlaying.set(true);
-    const textToRead = "Músculo " + m.name + ". Origem: " + m.origin + ". Inserção: " + m.insertion + ". Inervação: " + m.innervation + ". Ação: " + m.action + ".";
-    
-    try {
-      const base64Audio = await this.geminiService.generateSpeech(textToRead);
-      if (base64Audio) {
-        const audio = new Audio("data:audio/mp3;base64," + base64Audio);
-        audio.onended = () => this.isAudioPlaying.set(false);
-        audio.play();
-      } else {
-        this.isAudioPlaying.set(false);
-      }
-    } catch (e) {
-      console.error(e);
-      this.isAudioPlaying.set(false);
-    }
   }
 }
